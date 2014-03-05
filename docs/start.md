@@ -56,19 +56,19 @@ L'applicazione Spark mobile ti guiderà in questo processo, ma praticamente è u
 
 <a id="button1" class="button" onclick="animateCore()">Vedi un'animazione</a>
 
-Se l'applicazione mobile non va bene per te, puoi collegare lo Spark Core via USB. Per maggiori informazioni o per una spiegazione dettagliata su come collegare il Core For more information, or for a detailed explanation of how to connect your Core to the 'net, check out:
+Se l'applicazione mobile non va bene per te, puoi collegare lo Spark Core via USB. Per maggiori informazioni o per una spiegazione dettagliata su come collegare il Core alla rete, vedi:
 
-[Connect your Core >](/#/connect)
+[Collega il tuo Core >](/#/connect)
 
-### Step 4: Blink an LED with Tinker
+### Passo 4: Fai lampeggiare un LED con Tinker
 
 ![Tinker](images/tinker.png)
 
-The Spark mobile app contains a mini-app called Tinker that lets you... well, tinker. It lets you talk with the Input/Output pins of the Spark Core without writing a single line of code.
+L'applicazione Spark mobile contiene una mini-applicazione chiamata Tinker che ti permette di ... appunto, tinker, cioè armeggiare. Ti permette di parlare con i pins di Input/Output dello Spark Core senza scrivere una singola riga di codice.
 
-Each of the pins has up to four functions available: *digitalWrite*, *analogWrite*, *digitalRead*, and *analogRead*. For more information, scroll down to the "Tinkering with Tinker" section.
+Ognuno dei pins ha quattro possibili funzioni: *digitalWrite*, *analogWrite*, *digitalRead*, e *analogRead*. Per maggiori informazioni, scorri in basso alla sezione "Armeggiare con Tinker".
 
-### Step 5: Write Apps with Spark Build
+### Passo 5: Scrivi applicazioni con Spark Build
 
 ![Spark Build](images/ide.png)
 
