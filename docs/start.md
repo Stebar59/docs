@@ -1,7 +1,7 @@
-Getting started
+Come iniziare
 =====
 
-### What's in the box
+### Cosa c'è nella scatola
 
 ![Spark Core in box](images/core-in-box.jpg)
 
