@@ -5,10 +5,10 @@ Come iniziare
 
 ![Spark Core in box](images/core-in-box.jpg)
 
-Congratulazioni per essere un nuovo proprietario di un nuovissimo Spark Core! Vai avanti, apri la scatola e vediamo cosa trovi. La scatola dovrebbe contenere:
+Congratulazioni per essere il nuovo proprietario di un nuovissimo Spark Core! Vai avanti, apri la scatola e vediamo cosa trovi. La scatola dovrebbe contenere:
 
 - *Uno Spark Core*. La ragione per cui l'hai comperato. Andremo più in profondità fra poco.
-- *Un breadboard*. Un breadboard rende più semplice collegare i componenti al Core senza saldare. Internally, the rows are electrically connected horizontally, and the "rails" along the edges are connected vertically. See the [breadboard article on Wikipedia](http://en.wikipedia.org/wiki/Breadboard) for more information.
+- *Una breadboard*. La basetta sperimentale rende più semplice collegare i componenti al Core senza saldare. Internamente le righe lungo i bordi sono collegate orizontalmente mentre le colonne interne, verticalmente. Vedi  [l'articolo Breadboard su Wikipedia](http://it.wikipedia.org/wiki/Breadboard) per maggiori informazioni.
 - *One USB cable*. The included USB cable is used for two things: powering the Spark Core (by connecting it to your computer, to a USB power brick, or to a USB battery pack) and reprogramming. Most of the time you will be reprogramming the Core through the Cloud, but you always have the option of reprogramming it over USB, especially if your internet connection is down or you would prefer to use your own servers.
 
 
