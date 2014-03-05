@@ -9,12 +9,12 @@ Congratulazioni per essere il nuovo proprietario di un nuovissimo Spark Core! Va
 
 - *Uno Spark Core*. La ragione per cui l'hai comperato. Andremo più in profondità fra poco.
 - *Una breadboard*. La basetta sperimentale rende più semplice collegare i componenti al Core senza saldare. Internamente le righe lungo i bordi sono collegate orizontalmente mentre le colonne interne, verticalmente. Vedi  [l'articolo Breadboard su Wikipedia](http://it.wikipedia.org/wiki/Breadboard) per maggiori informazioni.
-- *One USB cable*. The included USB cable is used for two things: powering the Spark Core (by connecting it to your computer, to a USB power brick, or to a USB battery pack) and reprogramming. Most of the time you will be reprogramming the Core through the Cloud, but you always have the option of reprogramming it over USB, especially if your internet connection is down or you would prefer to use your own servers.
+- *Un cavo USB*. Il cavo USB incluso è usato per due scopi: per alimentare lo Spark Core (collegandolo al tuo PC, ad un aimentatore USB o ad un pacco di batterie USB) e per riprogrammarlo. La maggior parte delle volte riprogrammerai il Core tramite il Cloud ma avrai sempre la possibilità di programmarlo via USB, specialmente se la connessione internet non è disponibile o se preferisci usare i tuoi server.
 
 
-### Step 1: Power the Core
+### Passo 1: Alimentare il Core
 
-![Power the Core](images/core-usb.jpg)
+![Alimentare il Core](images/core-usb.jpg)
 
 Powering the Core is easy; it receives power over a Micro USB port, much like many smartphones and other gadgets. Power your Core on by connecting the Micro USB cable to the USB port on the Core, and plug the other end into any USB port on your computer, a USB hub (preferably powered), or a USB power adapter (like the one that probably came with your smartphone).
 
