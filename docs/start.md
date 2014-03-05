@@ -30,21 +30,21 @@ L'applicazione Spark mobile è il modo più semplice per connettere il tuo Spark
 - Connettere il tuo Spark Core alla tua rete Wi-Fi
 - Controllare il tuo Core senza scrivere una riga di codice
 
-The iOS app requires iOS 7, and the Android app works with Ice Cream Sandwich (Android 4.0) and newer.
+L'applicazione iOS necessita iOS 7, l'applicazione Android lavora con Ice Cream Sandwich (Android 4.0) e più recenti.
 
-[Download the iPhone app >](https://itunes.apple.com/us/app/spark-core/id760157884)
+[Scarica l'applicazione iPhone >](https://itunes.apple.com/us/app/spark-core/id760157884)
 
-[Download the Android app >](https://play.google.com/store/apps/details?id=io.spark.core.android)
+[Scarica l'applicazione Android >](https://play.google.com/store/apps/details?id=io.spark.core.android)
 
 
 
-### Step 3: Connect the Core to Wi-Fi
+### Passo 3: Collegare il Core alla rete Wi-Fi
 
 ![Smart Config](images/smart-config.png)
 
-Connecting the Spark Core to your Wi-Fi is dead simple. In fact, I did it twice while I was typing this paragraph.
+Connettere lo Spark Core al tuo Wi-Fi è molto semplice. Infatti, l'ho fatto due volte scrivendo questo paragrafo.
 
-The Spark mobile app will guide you through the process, but basically it's a one-step process where you type your Wi-Fi network name (SSID) and password and they're sent over Wi-Fi to the Spark Core, which automatically connects to the network and to the Spark Cloud. If everything works as planned, you'll see the LED go through the following colors:
+L'applicazione Spark mobile ti guiderà in questo processo, ma praticamente è un processo con un solo passo dove dovrai inserire il nome della rete Wi-fi (SSID) e la password e questi verranno inviati via Wi-Fi allo Spark Core che, automaticamente, si collegherà alla rete e allo Spark Cloud. Se tutto funziona come deve, vedrai il LED passare da questi colori:
 
 - **Flashing blue**: Listening for Wi-Fi credentials
 - **Flashing green**: Connecting to the Wi-Fi network
