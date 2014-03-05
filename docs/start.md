@@ -16,19 +16,19 @@ Congratulazioni per essere il nuovo proprietario di un nuovissimo Spark Core! Va
 
 ![Alimentare il Core](images/core-usb.jpg)
 
-Powering the Core is easy; it receives power over a Micro USB port, much like many smartphones and other gadgets. Power your Core on by connecting the Micro USB cable to the USB port on the Core, and plug the other end into any USB port on your computer, a USB hub (preferably powered), or a USB power adapter (like the one that probably came with your smartphone).
+Alimentare il Core è facile; riceve corrente via una porta Micro USB come molti smartphone e altri apparecchi. Alimenti il tuo Core collegando il cavo Micro USB alla porta USB del Core e l'altra parte del cavo alla porta USB del tuo computer, ad un hub USB (preferibilmente con alimentazione) o ad un alimentatore USB (come quello che hai ricevuto col tuo smartphone).
 
-If you so desire, you can also power the Core with 3.6V to 6V to the `VIN` pin, or 3.3V to the `3.3V` pin.
+Se desideri puoi anche alimentare il Core con una sorgente da 3.6V fino a 6V collegata al pin `VIN`, o con 3.3V al pin `3.3V`.
 
-### Step 2: Download the Spark iOS or Android app
+### Passo 2: Scaricamento dell'applicazione Spark iOS o Android
 
 ![Spark apps](images/spark-apps.png)
 
-The Spark mobile app is the easiest way to get your Spark Core connected to the internet. The app will help you do three things:
+L'applicazione Spark mobile è il modo più semplice per connettere il tuo Spark Core ad internet. L'applicazione ti aiuta a fare tre cose:
 
-- Create an account with Spark
-- Connect your Spark Core to your Wi-Fi network
-- Control your Core without writing any code
+- Creare un account con Spark
+- Connettere il tuo Spark Core alla tua rete Wi-Fi
+- Controllare il tuo Core senza scrivere una riga di codice
 
 The iOS app requires iOS 7, and the Android app works with Ice Cream Sandwich (Android 4.0) and newer.
 
