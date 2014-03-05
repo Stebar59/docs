@@ -46,17 +46,17 @@ Connettere lo Spark Core al tuo Wi-Fi è molto semplice. Infatti, l'ho fatto due
 
 L'applicazione Spark mobile ti guiderà in questo processo, ma praticamente è un processo con un solo passo dove dovrai inserire il nome della rete Wi-fi (SSID) e la password e questi verranno inviati via Wi-Fi allo Spark Core che, automaticamente, si collegherà alla rete e allo Spark Cloud. Se tutto funziona come deve, vedrai il LED passare da questi colori:
 
-- **Flashing blue**: Listening for Wi-Fi credentials
-- **Flashing green**: Connecting to the Wi-Fi network
-- **Flashing cyan**: Connecting to the Spark Cloud
-- **Flashing magenta**: Updating to the newest firmware
-- **Breathing cyan**: Connected!
+- **Blu lampeggiante**: in attesa delle credenziali del Wi-Fi
+- **Verde lampeggiante**: in connessione alla rete Wi-Fi
+- **Ciano lampeggianten**: in connessione allo Spark Cloud
+- **Magenta lampeggiante**: aggiornamento al nuovo programma
+- **Ciano pulsante**: Connesso!
 
 <div id="core1" class="core"><div class="core-butt"></div><div class="rgb"><div class="pattern"></div></div></div>
 
-<a id="button1" class="button" onclick="animateCore()">See an animation</a>
+<a id="button1" class="button" onclick="animateCore()">Vedi un'animazione</a>
 
-If the mobile app doesn't work for you, you can also connect your Spark Core over USB. For more information, or for a detailed explanation of how to connect your Core to the 'net, check out:
+Se l'applicazione mobile non va bene per te, puoi collegare lo Spark Core via USB. Per maggiori informazioni o per una spiegazione dettagliata su come collegare il Core For more information, or for a detailed explanation of how to connect your Core to the 'net, check out:
 
 [Connect your Core >](/#/connect)
 
