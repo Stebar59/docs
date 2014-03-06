@@ -5,30 +5,30 @@ Come iniziare
 
 ![Spark Core in box](images/core-in-box.jpg)
 
-Congratulazioni per essere il nuovo proprietario di un nuovissimo Spark Core! Vai avanti, apri la scatola e vediamo cosa trovi. La scatola dovrebbe contenere:
+Congratulazioni per essere i nuovi proprietari di un nuovissimo Spark Core! Andate avanti, aprite la scatola e vediamo cosa trovate. La scatola dovrebbe contenere:
 
-- *Uno Spark Core*. La ragione per cui l'hai comperato. Andremo più in profondità fra poco.
+- *Uno Spark Core*. La ragione per cui ll'avete comperato. Andremo più in profondità fra poco.
 - *Una breadboard*. La basetta sperimentale rende più semplice collegare i componenti al Core senza saldare. Internamente le righe lungo i bordi sono collegate orizontalmente mentre le colonne interne, verticalmente. Vedi  [l'articolo Breadboard su Wikipedia](http://it.wikipedia.org/wiki/Breadboard) per maggiori informazioni.
-- *Un cavo USB*. Il cavo USB incluso è usato per due scopi: per alimentare lo Spark Core (collegandolo al tuo PC, ad un aimentatore USB o ad un pacco di batterie USB) e per riprogrammarlo. La maggior parte delle volte riprogrammerai il Core tramite il Cloud ma avrai sempre la possibilità di programmarlo via USB, specialmente se la connessione internet non è disponibile o se preferisci usare i tuoi server.
+- *Un cavo USB*. Il cavo USB incluso è usato per due scopi: per alimentare lo Spark Core (collegandolo al vostro PC, ad un aimentatore USB o ad un pacco di batterie USB) e per riprogrammarlo. La maggior parte delle volte riprogrammerete il Core tramite il Cloud ma avrete sempre la possibilità di programmarlo via USB, specialmente se la connessione internet non è disponibile o se preferite usare i vostri server.
 
 
 ### Passo 1: Alimentare il Core
 
 ![Alimentare il Core](images/core-usb.jpg)
 
-Alimentare il Core è facile; riceve corrente via una porta Micro USB come molti smartphone e altri apparecchi. Alimenti il tuo Core collegando il cavo Micro USB alla porta USB del Core e l'altra parte del cavo alla porta USB del tuo computer, ad un hub USB (preferibilmente con alimentazione) o ad un alimentatore USB (come quello che hai ricevuto col tuo smartphone).
+Alimentare il Core è facile; riceve corrente via una porta Micro USB come molti smartphone e altri apparecchi. Alimentate il vostro Core collegando il cavo Micro USB alla porta USB del Core e l'altra parte del cavo alla porta USB del vostro computer, ad un hub USB (preferibilmente con alimentazione) o ad un alimentatore USB (come quello che avete ricevuto col vostro smartphone).
 
-Se desideri puoi anche alimentare il Core con una sorgente da 3.6V fino a 6V collegata al pin `VIN`, o con 3.3V al pin `3.3V`.
+Se desiderate, potete anche alimentare il Core con una sorgente da 3.6V fino a 6V collegata al pin `VIN`, o con 3.3V al pin `3.3V`.
 
 ### Passo 2: Scaricamento dell'applicazione Spark iOS o Android
 
 ![Spark apps](images/spark-apps.png)
 
-L'applicazione Spark mobile è il modo più semplice per connettere il tuo Spark Core ad internet. L'applicazione ti aiuta a fare tre cose:
+L'applicazione Spark mobile è il modo più semplice per connettere il vostro Spark Core ad internet. L'applicazione vi aiuta a fare tre cose:
 
 - Creare un account con Spark
-- Connettere il tuo Spark Core alla tua rete Wi-Fi
-- Controllare il tuo Core senza scrivere una riga di codice
+- Connettere il vostro Spark Core alla vostra rete Wi-Fi
+- Controllare il vostro Core senza scrivere una riga di codice
 
 L'applicazione iOS necessita iOS 7, l'applicazione Android lavora con Ice Cream Sandwich (Android 4.0) e più recenti.
 
@@ -42,9 +42,9 @@ L'applicazione iOS necessita iOS 7, l'applicazione Android lavora con Ice Cream 
 
 ![Smart Config](images/smart-config.png)
 
-Connettere lo Spark Core al tuo Wi-Fi è molto semplice. Infatti, l'ho fatto due volte scrivendo questo paragrafo.
+Connettere lo Spark Core al vostro Wi-Fi è molto semplice. Infatti, io l'ho fatto due volte scrivendo questo paragrafo!
 
-L'applicazione Spark mobile ti guiderà in questo processo, ma praticamente è un processo con un solo passo dove dovrai inserire il nome della rete Wi-fi (SSID) e la password e questi verranno inviati via Wi-Fi allo Spark Core che, automaticamente, si collegherà alla rete e allo Spark Cloud. Se tutto funziona come deve, vedrai il LED passare da questi colori:
+L'applicazione Spark mobile vi guiderà in questo processo, ma praticamente è un solo passo dove dovrete inserire il nome della rete Wi-fi (SSID) e la password e questi verranno inviati via Wi-Fi allo Spark Core che, automaticamente, si collegherà alla rete e allo Spark Cloud. Se tutto funziona come deve, vedrete il LED passare da questi colori:
 
 - **Blu lampeggiante**: in attesa delle credenziali del Wi-Fi
 - **Verde lampeggiante**: in connessione alla rete Wi-Fi
@@ -56,25 +56,25 @@ L'applicazione Spark mobile ti guiderà in questo processo, ma praticamente è u
 
 <a id="button1" class="button" onclick="animateCore()">Vedi un'animazione</a>
 
-Se l'applicazione mobile non va bene per te, puoi collegare lo Spark Core via USB. Per maggiori informazioni o per una spiegazione dettagliata su come collegare il Core alla rete, vedi:
+Se l'applicazione mobile non va bene per voi, potete collegare lo Spark Core via USB. Per maggiori informazioni o per una spiegazione dettagliata su come collegare il Core alla rete, vedi:
 
 [Collega il tuo Core >](/#/connect)
 
-### Passo 4: Fai lampeggiare un LED con Tinker
+### Passo 4: Fare lampeggiare un LED con Tinker
 
 ![Tinker](images/tinker.png)
 
-L'applicazione Spark mobile contiene una mini-applicazione chiamata Tinker che ti permette di ... appunto, tinker, cioè armeggiare. Ti permette di parlare con i pins di Input/Output dello Spark Core senza scrivere una singola riga di codice.
+L'applicazione Spark mobile contiene una mini-applicazione chiamata Tinker che vi permette di ... appunto, tinker, cioè armeggiare. Vi permette di parlare con i pins di Input/Output dello Spark Core senza scrivere una singola riga di codice.
 
-Ognuno dei pins ha quattro possibili funzioni: *digitalWrite*, *analogWrite*, *digitalRead*, e *analogRead*. Per maggiori informazioni, scorri in basso alla sezione "Armeggiare con Tinker".
+Ognuno dei pins ha quattro possibili funzioni: *digitalWrite*, *analogWrite*, *digitalRead*, e *analogRead*. Per maggiori informazioni, scorrere in basso alla sezione "Armeggiare con Tinker".
 
-### Passo 5: Scrivi applicazioni con Spark Build
+### Passo 5: Scrivere applicazioni con Spark Build
 
 ![Spark Build](images/ide.png)
 
-Quando sarai stufo di leggere dati dai sensori e far lampeggiare dei LED, vai sulla Spark Build IDE per il vero spettacolo.  Spark Build ti permette di creare e caricare applicazioni personali sul tuo Core partendo da qualsiasi web browser moderno e di equipaggiare il tuo Core con tutte le possibilità di Internet!  Wow!  
+Quando sarete stufi di leggere dati dai sensori e far lampeggiare dei LED, andate sulla Spark Build IDE per il vero spettacolo.  Spark Build vi permette di creare e caricare applicazioni personali sul vostro Core partendo da qualsiasi web browser moderno e di equipaggiare il vostro Core con tutte le possibilità di Internet!  Wow!  
 
-Non essere nervoso--abbiamo preparato un sacco di applicazioni di esempio e di librerie approvate dalla comunità che ti permetteranno di partire col piede giusto. Per saperne di più, controlla la sezione "Scrivere applicazioni con Spark Build" più in basso in questa pagina.
+Non siate nervosi--abbiamo preparato un sacco di applicazioni di esempio e di librerie approvate dalla comunità che vi permetteranno di partire col piede giusto. Per saperne di più, controllate la sezione "Scrivere applicazioni con Spark Build" più in basso in questa pagina.
 
 
 Aspetta, cos'è questa cosa?
@@ -82,28 +82,28 @@ Aspetta, cos'è questa cosa?
 
 Lo Spark Core è un kit di sviluppo Wi-Fi per hardware connesso ad internet. È il "cervello" di un progetto o prodotto connesso a internet.
 
-Il Core contiene un microprocessore che è un piccolo computer, non costoso e a basso consumo che può eseguire un'applicazione unica. Il microprocessore fa lo show; esegue il tuo programma e dice al resto del Core cosa fare. Non ha un sistema operativo come il tuo computer; esegue solamente un'applicazione (spesso chiamata *firmware* o *embedded application*), che può essere semplice, di poche righe di codice o molto complessa, a seconda di quello che vuoi fare.
+Il Core contiene un microprocessore che è un piccolo computer, non costoso e a basso consumo che può eseguire un'applicazione unica. Il microprocessore fa lo show; esegue il tuo programma e dice al resto del Core cosa fare. Non ha un sistema operativo come il vostro computer; esegue solamente un'applicazione (spesso chiamata *firmware* o *embedded application*), che può essere semplice, di poche righe di codice o molto complessa, a seconda di quello che volete fare.
 
 I microprocessori sono particolarmente bravi a *controllare cose*. Hanno diversi "pins" (delle piccole gambine che escono dal chip) che sono chiamate *GPIO* (General Purpose Input and Output) pins, o I/O pins. Possono essere collegati a sensori o bottoni per percepire il mondo, o collegati a luci e motori per interagire con esso. Questi pins del microprocessore sono stati direttamente collegati con i connettori sui lati del Core in modo da potervi accedere facilmente; specialmente i pins chiamati da D0 a D7 e da A0 a A7 sono direttamente collegati con i pins GPIO del microprocessore.
 
-Il microprocessore può inoltre comunicare con altri chips usando protocolli standard tipo *Serial* (anche chiamato UART), *SPI*, o *I2C* (anche chiamato Wire). Il Core può essere reso più performante connettendolo con dei chips con compiti speciali tipo driver per motori o shift registers. Ogni tanto questi chips sono integrati su un  *Shield*, un acessorio del Core che permette di estendere il Core. 
+Il microprocessore può inoltre comunicare con altri chips usando protocolli standard, tipo *Serial* (anche chiamato UART), *SPI*, o *I2C* (anche chiamato Wire). Il Core può essere reso più performante connettendolo con dei chips con compiti speciali tipo driver per motori o shift registers. Ogni tanto questi chips sono integrati su un *Shield*, un acessorio del Core che permette di estendere il Core. 
 
-Il Core ha inoltre un modulo Wi-Fi che lo connette alla tua rete Wi-Fi locale nello stesso modo in cui il tuo computer o smartphone si connettono ad una rete Wi-Fi. Il Core è programmato in modo da restare sempre connesso ad internet per default, fintanto che trovi e possa connettersi ad una rete.
+Il Core ha inoltre un modulo Wi-Fi che lo connette alla vostra rete Wi-Fi locale nello stesso modo in cui il vostro computer o smartphone si connettono ad una rete Wi-Fi. Il Core è programmato in modo da restare sempre connesso ad internet per default, fintanto che trovi e possa connettersi ad una rete.
 
-Quando il Core si connette a internet, stabilisce una connessione con lo *Spark Cloud*. Connettendosi con il Cloud, il Core diventa acessibile da qualsiasi luogo tramite una semplice REST API. Questa API è concepita per fare in modo che sia molto facile connettersi al Core tramite una applicazione web o mobile in modo sicuro e privato per far sì che solo tu e quelli di cui ti fidi possano accedere al Core.
+Quando il Core si connette a internet, stabilisce una connessione con lo *Spark Cloud*. Connettendosi con il Cloud, il Core diventa acessibile da qualsiasi luogo tramite una semplice REST API. Questa API è concepita per fare in modo che sia molto facile connettersi al Core tramite una applicazione web o mobile in modo sicuro e privato per far sì che solo voi e quelli di cui vi fidate possano accedere al Core.
 
 ### Bottoni
 
 Ci sono due bottoni sul Core: il bottone RESET (sulla destra) e il bottone MODE (sulla sinistra). 
 
-Con il bottone RESET si esegue un hard reset, proprio togliendo e rimettendo l'alimentazione al microprocessore. This is a good way to restart the application that you've downloaded onto the Core.  
+Con il bottone RESET si esegue un hard reset, proprio togliendo e rimettendo l'alimentazione al microprocessore. Questo è il modo migliore per far ripartire l'applicazione che avete caricato nel Core. Questo è il modo migliore per far ripartire l'applicazione che avete scaricato sul Core.
 
-The MODE button serves three functions:
+Il bottone MODE serve ha tre funzioni:
 
-- Hold down the MODE button for three seconds to put the Core into *Smart Config* mode to connect it to your local Wi-Fi network. The LED should start flashing blue.
-- Hold down the MODE button for ten seconds to clear the Core's memory of Wi-Fi networks.
-- Hold down the MODE button, tap on the RESET button and wait for *three seconds* to enter *Bootloader* mode, where you can reprogram the Core over USB or JTAG. Release the MODE button when you see the LED flashing yellow. If you do this by accident, simply hit RESET button to leave *Bootloader* mode.
-- Hold down the MODE button, tap on the RESET button and wait for *ten seconds* to do a *Factory Reset*, where the Core is reprogrammed with the software that was installed on the Core in the factory (the Tinker application). The LED should turn white for three seconds and begin flashing quickly; when the LED switches to another color the Core has been reset. This is useful if you encounter bugs with your firmware, or if you just want to get back to Tinker.
+- Tenendo premuto il bottone MODE per tre secondi il Core entra in modalità *Smart Config* per connetterlo alla vostra rete Wi-Fi locale. Il LED dovrebbe cominciare a lampeggiare blu.
+- Tenere premuto il bottone MODE per dieci secondi permette di cancellare la memoria delle reti Wi-Fi del Core.
+- Tenendo premuto il bottone MODE e premendo una volta il bottone RESET e aspettando per *tre secondi* il Core entra in modalità *Bootloader*, dove potete riprogrammare il Core via USB o JTAG. Lasciare il bottone quando il LED lampeggia giallo. Se avete fatto tutto questo per errore, semplicemente premere il bottone RESET per lasciare la modalità *Bootloader*.
+- Tenendo premuto il bottone MODE e premendo una volta il bottone RESET e aspettando per *dieci secondi* si effettua un *Factory Reset*, dove il Core viene riprogrammato con il software caricato in fabbrica (l'applicazione Tinker). Il LED dovrebbe diventare bianco per tre secondi e poi lampeggiare velocemente; quando il LED cambia su un altro colore il Core è stato inizializzato. Questa operazione è utile se avete problemi col il vostro firmware o se semplicemente volete tornare a Tinker.
 
 
 ### LEDs
