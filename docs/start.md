@@ -72,12 +72,12 @@ Ognuno dei pins ha quattro possibili funzioni: *digitalWrite*, *analogWrite*, *d
 
 ![Spark Build](images/ide.png)
 
-Once you're tired of reading reading sensor values and flashing LEDs, head over to the Spark Build IDE for the real show.  Spark Build allows you to create and flash custom applications to your Core from any modern web browser, and equips your Core with the full capabilities of the Internet!  Wow!  
+Quando sarai stufo di leggere dati dai sensori e far lampeggiare dei LED, vai sulla Spark Build IDE per il vero spettacolo.  Spark Build ti permette di creare e caricare applicazioni personali sul tuo Core partendo da qualsiasi web browser moderno e di equipaggiare il tuo Core con tutte le possibilità di Internet!  Wow!  
 
-Don't be nervous--we've got you covered with plenty of community-approved example applications and libraries that will get you started on the right foot.  To learn more, check out the "Writing Apps with Spark Build" section further down on this page.  
+Non essere nervoso--abbiamo preparato un sacco di applicazioni di esempio e di librerie approvate dalla comunità che ti permetteranno di partire col piede giusto. Per saperne di più, controlla la sezione "Scrivere applicazioni con Spark Build" più in basso in questa pagina.
 
 
-Wait, what is this thing?
+Aspetta, cos'è questa cosa?
 =====
 
 The Spark Core is a Wi-Fi development kit for internet-connected hardware. It is, in essence, the "brains" of a connected hardware product or project.
