@@ -108,25 +108,25 @@ Il bottone MODE serve ha tre funzioni:
 
 ### LEDs
 
-There are two LEDs on the Core. The big fat one in the middle is a full-color RGB LED that shows you the status of the Core's internet connection. The other small blue LED is the *user LED*; it's hooked up to D7, so when you turn the D7 pin `HIGH` or `LOW`, it turns on and off, respectively.
+Ci sono due LEDs sul Core. Quello più grande in mezzo è un LED RGB che fa vedere lo stato della connessione internet del Core. L'altro piccolo LED blu è il LED *LED utente*; è collegato al pin D7 e quindi quando impostate D7 a `HIGH` o `LOW`, si accende, rispettivamente si spegne.
 
-The RGB LED could show the following states:
+Il LED RGB può indicare i seguenti stati:
 
-- *Flashing blue*: Listening mode, waiting for network information.
-- *Solid blue*: Smart Config complete, network information found.
-- *Flashing green*: Connecting to local Wi-Fi network.
-- *Flashing cyan*: Connecting to Spark Cloud.
-- *Slow breathing cyan*: Successfully connected to Spark Cloud.
-- *Flashing yellow*: Bootloader mode, waiting for new code via USB or JTAG.
-- *Flashing white*: Factory Reset initiated.
-- *Solid white*: Factory Reset complete; rebooting.
+- *Blu lampeggiante*: Modo in ascolto, in attesa delle informazioni della rete.
+- *Blu fisso*: Smart Config completata, informazioni di rete trovate.
+- *Verde lampeggiante*: In connessione con la rete locale Wi-Fi.
+- *Ciano lampeggianten*: In connessione allo Spark Cloud.
+- *Ciano pulsante*: Connesso con successo allo Spark Cloud.
+- *Giallo lampeggiante*: Modo Bootloader, in attesa del nuovo codice via USB o JTAG.
+- *Bianco lampeggiante*: Factory Reset inizializzato.
+- *Bianco fisso*: Factory Reset completato; riavvio.
 
-The RGB LED can also let you know if there were errors in establishing an internet connection. *A red LED means an error has occurred.* These errors might include:
+Il LED RGB serve anche ad indicare se ci sono stati errori durante la connessione a internet. *Il LED rosso indica un errore.* Gli errori possono includere:
 
-- *Two red flashes*: Connection failure due to bad internet connection. Check your network connection.
-- *Three red flashes*: The Cloud is inaccessible, but the internet connection is fine. Check our [Twitter feed](http://www.twitter.com/sparkdevices) to see if there have been any reported outages; if not, visit our [support page](https://www.sparkdevices.com/support) for help.
-- *Four red flashes*: The Cloud was reached but the secure handshake failed. Visit our [support page](https://www.sparkdevices.com/support) for help.
-- *Flashing yellow/red*: Bad credentials for the Spark Cloud. Contact the Spark team (<a href="mailto@hello@spark.io">hello@spark.io</a>).
+- *Due flash rossi*: Errore di connessione dovuto ad una non buona connessione internet. Controllare la connessione internet.
+- *Tre flash rossi*: Il Cloud non è accessibile ma la connessione internet è buona. Controllare il nostro [Feed Twitter](http://www.twitter.com/sparkdevices) per vedere se ci sono annunciati dei problemi; se non ci sono visitare la [pagina di supporto](https://www.sparkdevices.com/support) per ricevere di aiuto.
+- *Quattro flash rossi*: Il Cloud è stato raggiunto ma lo scambio di informazioni di sicurezza è fallito. Visitate la nostra [pagina di supporto](https://www.sparkdevices.com/support) per ricevere aiuto.
+- *Lampeggio giallo/rosso*: Credenziali non valide per lo Spark Cloud. Contattare lo Spark Tteam (<a href="mailto@hello@spark.io">hello@spark.io</a>).
 
 ### Pins
 
