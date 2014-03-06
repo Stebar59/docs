@@ -124,28 +124,28 @@ Il LED RGB può indicare i seguenti stati:
 Il LED RGB serve anche ad indicare se ci sono stati errori durante la connessione a internet. *Il LED rosso indica un errore.* Gli errori possono includere:
 
 - *Due flash rossi*: Errore di connessione dovuto ad una non buona connessione internet. Controllare la connessione internet.
-- *Tre flash rossi*: Il Cloud non è accessibile ma la connessione internet è buona. Controllare il nostro [Feed Twitter](http://www.twitter.com/sparkdevices) per vedere se ci sono annunciati dei problemi; se non ci sono visitare la [pagina di supporto](https://www.sparkdevices.com/support) per ricevere di aiuto.
+- *Tre flash rossi*: Il Cloud non è accessibile ma la connessione internet è buona. Controllare il nostro [Feed Twitter](http://www.twitter.com/sparkdevices) per vedere se ci sono annunciati dei problemi; se non ci sono visitare la [pagina di supporto](https://www.sparkdevices.com/support) per ricevere aiuto.
 - *Quattro flash rossi*: Il Cloud è stato raggiunto ma lo scambio di informazioni di sicurezza è fallito. Visitate la nostra [pagina di supporto](https://www.sparkdevices.com/support) per ricevere aiuto.
 - *Lampeggio giallo/rosso*: Credenziali non valide per lo Spark Cloud. Contattare lo Spark Tteam (<a href="mailto@hello@spark.io">hello@spark.io</a>).
 
 ### Pins
 
-The Core has 24 pins that you can connect a circuit to. These pins are:
+Il Core ha 24 pins a cui si può collegare un circuito. Questi pins sono:
 
-- _VIN_: Connect an unregulated power source here with a voltage between 3.6V and 6V to power the Core. If you're powering the Core over USB, this pin should *not* be used.
-- _3V3_: This pin will output a regulated 3.3V power rail that can be used to power any components outside the Core. (Also, if you have your own 3.3V regulated power source, you can plug it in here to power the Core).
-- _3V3*_: This is a separate low-noise regulated 3.3V power rail designed for analog circuitry that may be susceptible to noise from the digital components. If you're using any sensitive analog sensors, power them from _3V3*_ instead of from _3V3_.
-- _!RST_: You can reset the Core (same as pressing the RESET button) by connecting this pin to GND.
-- _GND_: These pins are your ground pins.
-- _D0 to D7_: These are the bread and butter of the Spark Core: 8 GPIO (General Purpose Input/Output) pins. They're labeled "D" because they are "Digital" pins, meaning they can't read the values of analog sensors. Some of these pins have additional peripherals (SPI, JTAG, etc.) available, keep reading to find out more.
-- _A0 to A7_: These pins are 8 more GPIO pins, to bring the total count up to 16. These pins are just like D0 to D7, but they are "Analog" pins, which means they can read the values of analog sensors (technically speaking they have an ADC peripheral). As with the Digital pins, some of these pins have additional peripherals available.
-- _TX and RX_: These pins are for communicating over Serial/UART. TX represents the transmitting pin, and RX represents the receiving pin.
+- _VIN_: Collegate qui un'alimentazione non regolata tra 3.6V e 6V per alimentare il Core. Se si alimenta il Core via USB, questo pin *non* deve essere usato.
+- _3V3_: Questo pin fornisce una tensione regolata di 3.3V che può essere usata per alimentare delle componenti esterne al Core (Se avete la vostra alimentazione regolata di 3.3V la potete collegare qui per alimentare il Core).
+- _3V3*_: Questa è una alimentazione regolata a basso disturbo di 3.3V da usare per circuiti analogici che potrebbero essere sensibili ai disturbi delle componenti digitali. Se usate dei sensori analogici sensibili alimentateli dal pin _3V3*_ invece che dal _3V3_.
+- _!RST_: Potete inizializzare il Core (come premendo il tasto RESET) connettendo questo pin a massa (GND).
+- _GND_: Questi pins sono collegati a massa.
+- _D0 a D7_: Questi sono il pane e il burro dello Spark Core: 8 GPIO (General Purpose Input/Output) pins. Sono indicati con "D" perchè sono pins digitali, cioè non possono leggere i valori di sensori analogici. Alcuni di questi mettono a disposizione delle periferiche aggiuntive (SPI, JTAG, etc.), vedi più avanti per maggiori informazioni.
+- _A0 a A7_: Questi pins sono 8 GPIO in più che portano il totale a 16. Questi pins sono come quelli da D0 a D7, ma sono "Analogici", cioè possono leggere i dati dai sensori analogici (tecnicamente hanno una periferica ADC). Come per i pins digitali anche questi hanno delle periferiche aggiuntive.
+- _TX and RX_: Questi pins sono per la comunicazione via seriale/UART. TX rappresenta il pin di trasmissione e RX quello di ricezione.
 
-#### PWM Pins
+#### Pins PWM
 
-When you want to use the `analogWrite()` function on the Core, for instance to smoothly dim the brightness of LEDs, you need to use pins that have a timer peripheral.  People often call these PWM pins, since what they do is called Pulse Width Modulation.  The Core has 8 PWM pins: A0, A1, A4, A5, A6, A7, D0 and D1.
+Quando volete usare la funzione `analogWrite()` nel Core, per esempio per regolare la luminosità di LEDs, dovete usare dei pins che hanno una periferica con timer. Questi pins vengono generalmente chiamati pins PWM perchè quello che fanno è chiamata Pulse Width Modulation.  Il Core ha 8 pins PWM: A0, A1, A4, A5, A6, A7, D0 e D1.
 
-The Spark Cloud
+Lo Spark Cloud
 ---
 
 The Spark Cloud is a network of servers hosted at `https://api.spark.io/` that the Spark Core connects to once it's on your Wi-Fi network.
