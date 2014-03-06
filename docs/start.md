@@ -80,7 +80,7 @@ Non essere nervoso--abbiamo preparato un sacco di applicazioni di esempio e di l
 Aspetta, cos'è questa cosa?
 =====
 
-The Spark Core is a Wi-Fi development kit for internet-connected hardware. It is, in essence, the "brains" of a connected hardware product or project.
+Lo Spark Core è un kit di sviluppo Wi-Fi per hardware connesso ad internet. È il "cervello" di un progetto o prodotto connesso a internet.
 
 The Core has on board a microcontroller, which is a small, low-cost, low-power computer that can run a single application. The microcontroller runs the show; it runs your software and tells the rest of the Core what to do. It doesn't have an Operating System the way that your computer does; it just runs a single application (often called *firmware* or an *embedded application*), which can be simple, just a few lines of code, or very complex, depending on what you want to do.
 
