@@ -82,21 +82,21 @@ Aspetta, cos'è questa cosa?
 
 Lo Spark Core è un kit di sviluppo Wi-Fi per hardware connesso ad internet. È il "cervello" di un progetto o prodotto connesso a internet.
 
-The Core has on board a microcontroller, which is a small, low-cost, low-power computer that can run a single application. The microcontroller runs the show; it runs your software and tells the rest of the Core what to do. It doesn't have an Operating System the way that your computer does; it just runs a single application (often called *firmware* or an *embedded application*), which can be simple, just a few lines of code, or very complex, depending on what you want to do.
+Il Core contiene un microprocessore che è un piccolo computer, non costoso e a basso consumo che può eseguire un'applicazione unica. Il microprocessore fa lo show; esegue il tuo programma e dice al resto del Core cosa fare. Non ha un sistema operativo come il tuo computer; esegue solamente un'applicazione (spesso chiamata *firmware* o *embedded application*), che può essere semplice, di poche righe di codice o molto complessa, a seconda di quello che vuoi fare.
 
-Microcontrollers are particularly good at *controlling things*; hence the name. They have a set of "pins" (little spider leg type things sticking off the chip) that are called *GPIO* (General Purpose Input and Output) pins, or I/O pins. They can be hooked to sensors or buttons to listen to the world, or they can be hooked to lights and motors to act upon the world. These microcontroller's pins have been directly connected to the headers on the sides of the Core so you can easily access them; specifically, the pins labeled D0 to D7 and A0 to A7 are hooked directly to the microcontroller's GPIO pins.
+I microprocessori sono particolarmente bravi a *controllare cose*. Hanno diversi "pins" (delle piccole gambine che escono dal chip) che sono chiamate *GPIO* (General Purpose Input and Output) pins, o I/O pins. Possono essere collegati a sensori o bottoni per percepire il mondo, o collegati a luci e motori per interagire con esso. Questi pins del microprocessore sono stati direttamente collegati con i connettori sui lati del Core in modo da potervi accedere facilmente; specialmente i pins chiamati da D0 a D7 e da A0 a A7 sono direttamente collegati con i pins GPIO del microprocessore.
 
-The microcontroller can also communicate with other chips using common protocols like *Serial* (also called UART), *SPI*, or *I2C* (also called Wire). You can then make the Core more powerful by connecting it to special-purpose chips like motor drivers or shift registers. Sometimes we'll wrap up these chips on a *Shield*, an accessory to the Core that makes it easy to extend the Core.
+Il microprocessore può inoltre comunicare con altri chips usando protocolli standard tipo *Serial* (anche chiamato UART), *SPI*, o *I2C* (anche chiamato Wire). Il Core può essere reso più performante connettendolo con dei chips con compiti speciali tipo driver per motori o shift registers. Ogni tanto questi chips sono integrati su un  *Shield*, un acessorio del Core che permette di estendere il Core. 
 
-The Core also has a Wi-Fi module, which connects it to your local Wi-Fi network in the same way that your computer or smartphone might connect to a Wi-Fi network. The Core is programmed to stay connected to the internet by default, so long as it can find and connect to a network.
+Il Core ha inoltre un modulo Wi-Fi che lo connette alla tua rete Wi-Fi locale nello stesso modo in cui il tuo computer o smartphone si connettono ad una rete Wi-Fi. Il Core è programmato in modo da restare sempre connesso ad internet per default, fintanto che trovi e possa connettersi ad una rete.
 
-When the Core connects to the internet, it establishes a connection to the *Spark Cloud*. By connecting to the Cloud, the Core becomes accessible from anywhere through a simple REST API. This API is designed to make it very easy to interface with the Core through a web app or mobile app in a secure, private way, so that only you and those you trust can access the Core.
+Quando il Core si connette a internet, stabilisce una connessione con lo *Spark Cloud*. Connettendosi con il Cloud, il Core diventa acessibile da qualsiasi luogo tramite una semplice REST API. Questa API è concepita per fare in modo che sia molto facile connettersi al Core tramite una applicazione web o mobile in modo sicuro e privato per far sì che solo tu e quelli di cui ti fidi possano accedere al Core.
 
-### Buttons
+### Bottoni
 
-There are two buttons on the Core: the RESET button (on the right) and the MODE button (on the left). 
+Ci sono due bottoni sul Core: il bottone RESET (sulla destra) e il bottone MODE (sulla sinistra). 
 
-The RESET button will put the Core in a hard reset, effectively depowering and repowering the microcontroller. This is a good way to restart the application that you've downloaded onto the Core.  
+Con il bottone RESET si esegue un hard reset, proprio togliendo e rimettendo l'alimentazione al microprocessore. This is a good way to restart the application that you've downloaded onto the Core.  
 
 The MODE button serves three functions:
 
