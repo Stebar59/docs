@@ -148,17 +148,17 @@ Quando volete usare la funzione `analogWrite()` nel Core, per esempio per regola
 Lo Spark Cloud
 ---
 
-The Spark Cloud is a network of servers hosted at `https://api.spark.io/` that the Spark Core connects to once it's on your Wi-Fi network.
+Lo Spark Cloud è una rete di servers presso `https://api.spark.io/` dove il vostro Core si collega quando è collegato a internet.
 
-The Cloud exists for three main reasons:
+Il Cloud esiste per tre ragioni principali:
 
-### Simplicity
+### Semplicità
 
-Generally speaking, when you work in an embedded system, networking means sending bytes over TCP sockets and UDP datagrams. Everyone agrees - socket programming is not fun. But higher-level communications are difficult because microcontrollers have so little memory they can't generally host a traditional HTTP web server. The Cloud gives you the simplicity of the web server with the low cost and low power of a microcontroller by translating between web communications (HTTP requests) and embedded communications (in our case, encrypted CoAP messages).
+Parlando in generale, quando si lavora in un sistema incorporato (embedded system) networking significa inviare bytes tramite sockets TCP e datagrams UDP. Sono tutti daccordo che la programmazione UDP non è divertente. La comunicazione a livelli più alti è difficile perchè i microprocessori hanno così poca memoria che non possono generalmente ospitare un server web HTTP tradizionale. Il Cloud vi da la semplicità del server web con i costi e la potenza ridotti di un microprocessore facendo da tramite tra la comunicazione web (richieste HTTP) e quella incorporata (embedded), nel nostro caso messaggi CoAP criptati).
 
-But you don't have to know any of that. The whole point of the Cloud is that all of this is abstracted away. You don't need to know *how* it connects to the internet; it just does. And once it's connected, you can make it do awesome things quickly and easily, without dealing with sockets.
+Ma non è necessario sapere tutto questo. Il bello del Cloud è che tutto questo è astratto. Non dovete sapere *come* il Core si connette ad internet; semplicemente lo fa. E una volta che è connesso gli potete far fare cose grandiose velocemente e facilmente, senza occuparvi di sockets.
 
-### Global availability
+### Disponibilità globale
 
 By default, if you connect a thing to your Wi-Fi network, it's only available from elsewhere on your local network. This is a result of the fact that we've run out of IP addresses, and it's also a security measure, since it means that people can't just reach into your home willy-nilly and mess with your stuff.
 
