@@ -160,25 +160,24 @@ Ma non è necessario sapere tutto questo. Il bello del Cloud è che tutto questo
 
 ### Disponibilità globale
 
-By default, if you connect a thing to your Wi-Fi network, it's only available from elsewhere on your local network. This is a result of the fact that we've run out of IP addresses, and it's also a security measure, since it means that people can't just reach into your home willy-nilly and mess with your stuff.
+Per default, se connettete qualcosa alla vostra rete Wi-Fi, questa è accessibile solamente internamente alla rete locale. Questo è dovuto al fatto che si è a corto di indirizzi IP ed è anche una misura di sicurezza, visto che ciò non permette a persone qualsiasi di accedere alla vostra rete ed immischiarsi nei fatti vostri.
 
-Making the stuff in your home available outside your home is a pain, and usually requires nasty things like port mapping and static IP addresses. Even if you're technically savvy enough to handle this stuff, if you're developing a product, you don't want to make familiarity with OpenWRT a pre-requisite for purchasing your product.
+Rendere disponibile le vostre cose al di fuori della rete locale non è evidente e normalmente richiede operazioni speciali tipo mapping delle porte e indirizzi IP statici. Anche se siete tecnicamente preparati per maneggiare tutto ciò, se sviluppate un prodotto non volete che essere ferrati con OpenWRT sia un presupposto per l'acquisto di esso.
 
-We avoid this issue entirely with the Cloud. The Core connects to the Cloud when it hits your Wi-Fi network, and holds open a persistent connection. This means that it's available from anywhere in the world at any time.
+Evitiamo tutto questo con il Cloud. Il Core si connette con il Cloud appena è sulla vostra rete Wi-Fi e mantiene una connessione con esso sempre aperta. Questo significa che è raggiungibile sempre e da ogni parte del mondo.
 
-But wait, if local networks are a security measure, then doesn't this open you up to all sorts of nastiness? Well, it would, except...
+Ma un momento, se le reti locali sono una misura di sicurezza, questo non vi espone a ogni sorte di problemi? Beh, certo potrebbe ma ...
 
-### Security
+### Sicurezza
 
-Yep, that's right. We thought of that.
+Sì, esatto. Ci abbiamo pensato!
 
-Security is hard. It's especially hard on an embedded system, because encryption is resource intensive. But it's also important, because you don't want anyone turning on and off your lights, or worse, locking and unlocking your front doors.
+La sicurezza è difficile. Specialmente in un sistema embedded visto che il criptaggio è molto affamato di risorse. Ma è anche molto importante perchè non volete certo che qualcuno accenda e spenga le vostre luci, o peggio ancora, che apra e chiuda le vostre porte.
 
-We hand-picked a set of rock-solid security protocols that are secure and efficient, so they work great on an embedded system. They're baked into the Spark Protocol, which is open source and ready to be extended to other products.
+Abbiamo selezionato una serie di protocolli di sicurezza molto solidi che sono sicuri ed efficenti in modo da funzionare bene in un sistema embedded. Sono integrati nel protocollo Spark, che è open source e pronto per essere esteso ad altri prodotti.
 
 
-
-Tinkering with "Tinker"
+Armeggiare con "Tinker"
 ======
 
 The Tinker app
