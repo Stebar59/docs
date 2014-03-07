@@ -190,16 +190,16 @@ L'applicazione consiste in 16 pins in colonne verticali - 8 pins analogici sulla
 
 ![Tinker selection](images/tinker-select.png)
 
-To begin, tap any of the pins. A menu will pop up showing the functions that pin has available. Each pin can have up to four possible functions:
+Per cominciare tocca uno dei pins. Apparirà un menu con le funzioni a disposizione. Ogni pin può avere quattro funzioni:
 
-- **digitalWrite**: Sets the pin to HIGH or LOW, which either connects it to 3.3V (the maximum voltage of the system) or to GND (ground). Pin D7 is connected to an on-board LED; if you set pin D7 to HIGH, the LED will turn on, and if you set it to LOW, it will turn off.
-- **analogWrite**: Sets the pin to a value between 0 and 255, where 0 is the same as LOW and 255 is the same as HIGH. This is sort of like sending a voltage between 0 and 3.3V, but since this is a digital system, it uses a mechanism called Pulse Width Modulation, or PWM. You could use *analogWrite* to dim an LED, as an example.
-- **digitalRead**: This will read the digital value of a pin, which can be read as either HIGH or LOW. If you were to connect the pin to 3.3V, it would read HIGH; if you connect it to GND, it would read LOW. Anywhere in between, it'll probably read whichever one it's closer to, but it gets dicey in the middle.
-- **analogRead**: This will read the analog value of a pin, which is a value from 0 to 4095, where 0 is LOW (GND) and 4095 is HIGH (3.3V). All of the analog pins (A0 to A7) can handle this. *analogRead* is great for reading data from sensors.
+- **digitalWrite**: Mette il pin a HIGH o LOW, connettendolo a 3.3V (la tensione massima del sistema) rispettivamente a GND (massa).Il pin D7 è collegato al LED interno; set mettete il pin D7 a HIGH, il LED si accende mentre se lo mettete a LOW, si spegne.
+- **analogWrite**: Mette il pin ad un valore tra 0 e 255, dove 0 è come LOW e 255 come HIGH. Questo è come inviare una tensione tra 0 e 3.3V sul pin, ma essendo il sistema digitale, viene usato un meccaniscmo chiamato Pulse Width Modulation, o PWM. Per esempio potete usare *analogWrite* per cambiare l'intensità ad un LED.
+- **digitalRead**: Questo legge il valore digitale del pin, che può essere HIGH o LOW. Se avete collegato il pin a 3.3V, la lettura sarà HIGH; se lo connettete a massa (GND) sarà LOW. Per valori intermedi la lettura sarà il valore più vicino ma pericolosamente non ben definito.
+- **analogRead**: Questa funzione legge il valore analogico di un pin, che è un valore tra 0 e 4095 dove 0 è LOW (GND) e 4095 è HIGH (3.3V). Tutti i pin analogici (da A0 a A7) possono usare questa funzione. *analogRead* è l'ideale per leggere i dati dai sensori.
 
-To change the function of the pin, simply tap and hold on the pin, and the function select menu will come back up. Any further questions? Come talk to us in the [forums!](https://community.sparkdevices.com/)
+Per cambiare la funzione semplicemente rimanere sul pin e riapparirà il menu per la selezione delle funzioni. Avete altre domande? Contattateci sui [forums!](https://community.sparkdevices.com/)
 
-The Tinker firmware
+Il firmware Tinker
 ---
 
 The Tinker firmware is the default application program stored in the Spark Core upon its commissioning from the factory assembly line. You can always get back to it by putting the Core in the [factory reset mode](#buttons), or by re-flashing your Core with Tinker in the Spark mobile app.
