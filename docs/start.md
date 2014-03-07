@@ -192,10 +192,10 @@ L'applicazione consiste in 16 pins in colonne verticali - 8 pins analogici sulla
 
 Per cominciare tocca uno dei pins. Apparirà un menu con le funzioni a disposizione. Ogni pin può avere quattro funzioni:
 
-- **digitalWrite**: Mette il pin a HIGH o LOW, connettendolo a 3.3V (la tensione massima del sistema) rispettivamente a GND (massa).Il pin D7 è collegato al LED interno; set mettete il pin D7 a HIGH, il LED si accende mentre se lo mettete a LOW, si spegne.
+- **digitalWrite**: Mette il pin a HIGH o LOW, connettendolo a 3.3V (la tensione massima del sistema) rispettivamente a GND (massa). Il pin D7 è collegato al LED interno; se mettete il pin D7 a HIGH, il LED si accende mentre se lo mettete a LOW, si spegne.
 - **analogWrite**: Mette il pin ad un valore tra 0 e 255, dove 0 è come LOW e 255 come HIGH. Questo è come inviare una tensione tra 0 e 3.3V sul pin, ma essendo il sistema digitale, viene usato un meccaniscmo chiamato Pulse Width Modulation, o PWM. Per esempio potete usare *analogWrite* per cambiare l'intensità ad un LED.
-- **digitalRead**: Questo legge il valore digitale del pin, che può essere HIGH o LOW. Se avete collegato il pin a 3.3V, la lettura sarà HIGH; se lo connettete a massa (GND) sarà LOW. Per valori intermedi la lettura sarà il valore più vicino ma pericolosamente non ben definito.
-- **analogRead**: Questa funzione legge il valore analogico di un pin, che è un valore tra 0 e 4095 dove 0 è LOW (GND) e 4095 è HIGH (3.3V). Tutti i pin analogici (da A0 a A7) possono usare questa funzione. *analogRead* è l'ideale per leggere i dati dai sensori.
+- **digitalRead**: Legge il valore digitale del pin, che può essere HIGH o LOW. Se avete collegato il pin a 3.3V, la lettura sarà HIGH; se lo connettete a massa (GND) sarà LOW. Per valori intermedi la lettura sarà il valore più vicino ma pericolosamente non ben definito.
+- **analogRead**: Legge il valore analogico di un pin, che è un valore tra 0 e 4095 dove 0 è LOW (GND) e 4095 è HIGH (3.3V). Tutti i pin analogici (da A0 a A7) possono usare questa funzione. *analogRead* è l'ideale per leggere i dati dai sensori.
 
 Per cambiare la funzione semplicemente rimanere sul pin e riapparirà il menu per la selezione delle funzioni. Avete altre domande? Contattateci sui [forums!](https://community.sparkdevices.com/)
 
@@ -209,56 +209,52 @@ L'applicazione Tinker è un bel esempio di come creare un'applicazione potente s
 La API Tinker
 ---
 
-When the Tinker firmware is installed on your Spark Core, it will respond to certain API requests from your mobile app, which mirror the four basic GPIO functions (digitalWrite, analogWrite, digitalRead, analogRead). These API requests can also be made from another application, so you can build your own web or mobile app around the Tinker firmware.
+Quando il firmware Tinker è installato sul vostro Spark Core risponderà a delle richieste API dalla vostra applicazione mobile, che rispecchia le quattro funzioni GPIO di base (digitalWrite, analogWrite, digitalRead, analogRead). Queste richieste API possono essere fatte da altre applicazioni, così potete creare le vostre applicazioni web o mobile attorno al firmware Tinker.
 
 ### digitalWrite
 
-Sets the pin to HIGH or LOW, which either connects it to 3.3V (the maximum voltage of the system) or to GND (ground). Pin D7 is connected to an on-board LED; if you set pin D7 to HIGH, the LED will turn on, and if you set it to LOW, it will turn off.
+Mette il pin a HIGH o LOW, cioè lo connette a 3.3V (la tensione massima del sistema) o a GND (massa). Il pin D7 è collegato al LED interno; se mettete il pin D7 a HIGH, il LED si accende mentre se lo mettete a LOW, si spegne.
 
     POST /v1/devices/{DEVICE_ID}/digitalwrite
 
-    # EXAMPLE REQUEST IN TERMINAL
-    # Core ID is 0123456789abcdef01234567
-    # Your access token is 1234123412341234123412341234123412341234
+    # ESEMPIO DI RICHIESTA NEL TERMINALE
+    # Core ID è 0123456789abcdef01234567
+    # Il tuo token di accesso è 1234123412341234123412341234123412341234
     curl https://api.spark.io/v1/devices/0123456789abcdef01234567/digitalwrite \
       -d access_token=1234123412341234123412341234123412341234 -d params=D0,HIGH
 
-The parameters must be the pin (A0 to A7, D0 to D7), followed by either HIGH or LOW, separated by a comma. The return value will be 1 if the write succeeds, and -1 if it fails.
-
+I parametri devono essere il pin (A0 a A7, D0 a D7), seguito da HIGH o LOW, separati da una virgola. Il valore di ritorno sarà 1 se la scrittura ha avuto successo e -1 in caso di non riuscita.
 
 
 ### analogWrite
 
-Sets the pin to a value between 0 and 255, where 0 is the same as LOW and 255 is the same as HIGH. This is sort of like sending a voltage between 0 and 3.3V, but since this is a digital system, it uses a mechanism called Pulse Width Modulation, or PWM. You could use *analogWrite* to dim an LED, as an example.
+Mette il pin ad un valore tra 0 e 255, dove 0 è come LOW e 255 come HIGH. Questo è come inviare una tensione tra 0 e 3.3V sul pin, ma essendo il sistema digitale, viene usato un meccaniscmo chiamato Pulse Width Modulation, o PWM. Per esempio potete usare *analogWrite* per cambiare l'intensità ad un LED.
 
     POST /v1/devices/{DEVICE_ID}/analogwrite
 
-    # EXAMPLE REQUEST IN TERMINAL
-    # Core ID is 0123456789abcdef01234567
-    # Your access token is 1234123412341234123412341234123412341234
+    # ESEMPIO DI RICHIESTA NEL TERMINALE
+    # Core ID è 0123456789abcdef01234567
+    # Il tuo token di accesso è 1234123412341234123412341234123412341234
     curl https://api.spark.io/v1/devices/0123456789abcdef01234567/analogwrite \
       -d access_token=1234123412341234123412341234123412341234 -d params=A0,215
 
-The parameters must be the pin (A0 to A7, D0 to D7), followed by an integer value from 0 to 255, separated by a comma. The return value will be 1 if the write succeeds, and -1 if it fails.
-
-    
+I parametri devono essere il pin (A0 a A7, D0 a D7), seguito da un valore integer da 0 a 255, separati da una virgola. Il valore di ritorno sarà 1 se la scrittura ha avuto successo e -1 in caso di non riuscita.
 
 
 ### digitalRead
 
-This will read the digital value of a pin, which can be read as either HIGH or LOW. If you were to connect the pin to 3.3V, it would read HIGH; if you connect it to GND, it would read LOW. Anywhere in between, it'll probably read whichever one it's closer to, but it gets dicey in the middle.
+Legge il valore digitale del pin, che può essere HIGH o LOW. Se avete collegato il pin a 3.3V, la lettura sarà HIGH; se lo connettete a massa (GND) sarà LOW. Per valori intermedi la lettura sarà il valore più vicino ma pericolosamente non ben definito.
 
     POST /v1/devices/{DEVICE_ID}/digitalread
 
-    # EXAMPLE REQUEST IN TERMINAL
-    # Core ID is 0123456789abcdef01234567
-    # Your access token is 1234123412341234123412341234123412341234
+    # ESEMPIO DI RICHIESTA NEL TERMINALE
+    # Core ID è 0123456789abcdef01234567
+    # Il tuo token di accesso è  1234123412341234123412341234123412341234
     curl https://api.spark.io/v1/devices/0123456789abcdef01234567/digitalread \
       -d access_token=1234123412341234123412341234123412341234 -d params=D0
 
 
-The parameter must be the pin (A0 to A7, D0 to D7). The return value will be 1 if the pin is HIGH, 0 if the pin is LOW, and -1 if the read fails.
-
+Il parametro deve essere il pin (A0 a A7, D0 a D7). Il valore di ritorno sarà 1 se il pin è HIGH, 0 se è LOW e -1 in caso di lettura non riuscita.
 
 
 ### analogRead
