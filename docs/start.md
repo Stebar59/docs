@@ -259,68 +259,68 @@ Il parametro deve essere il pin (A0 a A7, D0 a D7). Il valore di ritorno sarà 1
 
 ### analogRead
 
-This will read the analog value of a pin, which is a value from 0 to 4095, where 0 is LOW (GND) and 4095 is HIGH (3.3V). All of the analog pins (A0 to A7) can handle this. *analogRead* is great for reading data from sensors.
+Legge il valore analogico di un pin, che è un valore tra 0 e 4095 dove 0 è LOW (GND) e 4095 è HIGH (3.3V). Tutti i pin analogici (da A0 a A7) possono usare questa funzione. *analogRead* è l'ideale per leggere i dati dai sensori.
 
     POST /v1/devices/{DEVICE_ID}/analogread
 
-    # EXAMPLE REQUEST IN TERMINAL
-    # Core ID is 0123456789abcdef01234567
-    # Your access token is 1234123412341234123412341234123412341234
+    # ESEMPIO DI RICHIESTA NEL TERMINALE
+    # Core ID è 0123456789abcdef01234567
+    # Il tuo token di accesso è  1234123412341234123412341234123412341234
     curl https://api.spark.io/v1/devices/0123456789abcdef01234567/analogread \
       -d access_token=1234123412341234123412341234123412341234 -d params=A0
 
-The parameters must be the pin (A0 to A7, D0 to D7). The return value will be between 0 and 4095 if the read succeeds, and -1 if it fails.
+Il parametro deve essere il pin (A0 a A7, D0 a D7). Il valore di ritorno sarà tra 0 e 4095 se la lettura è riuscita e -1 se è fallita.
 
 
-Flash Apps with Spark Build
+Caricare applicazioni con lo Spark Build
 ===
 
-What is firmware?
+Cosa è un firmware?
 ---
 
-An *embedded system* like the Spark Core doesn't have an Operating System like a traditional computer. Instead, it runs a single application, often called *firmware*, which runs whenever the system is powered.
+Un *sistema embedded* come lo Spark Core non ha un sistema operativo come un computer tradizionale. Al suo posto può girare una singola applicazione chiamata spesso *firmware*, che viene eseguita ogni volta che si accende il sistema.
 
-*Firmware* is so-called because it's harder than software and softer than hardware. Hardware is fixed during manufacturing, and doesn't change. Software can be updated anytime, so it's very flexible. Firmware is somewhere in between; hardware companies do issue firmware updates, but they tend to be very infrequent, because upgrading firmware can be difficult.
+Viene chiamato *Firmware* perchè è più duro di software e più morbido di hardware. L'Hardware è fissato durante la produzione e non cambia. Il Software può essere aggiornato ogni volta, quindi è molto flessibile. Il Firmware è qualcosa in mezzo; le ditte di hardware fanno degli aggiornamenti del firmware ma non molto frequentemente perchè l'aggiornamento del firmware può essere difficoltoso.
 
-In our case, because the Spark Core is connected to the internet, updating firmware is quite trivial; we send it over the network, and we have put in place safeguards to keep you from "bricking" the Core.
+Nel nostro caso, visto che lo Spark Core è connesso ad internet, aggiornare il firmware è alquanto triviale; lo mandiamo via rete e abbiamo la sicurezza che non possiate "bloccare" il Core.
 
-When you flash code onto the Spark Core, you are doing an *over-the-air firmware update*. This firmware update overwrites almost all of the software on the Spark Core; the only piece that is untouched is the bootloader, which manages the process of loading new firmware and ensures you can always update the firmware over USB or through a factory reset.  (We'll be open sourcing the bootloader as soon as we can bring the README up to date.)
+Quando aggiornate il codice sullo Spark Core facciamo un cosidetto *aggiornamento firmware via etere*. Questo aggiornamento firmware sovrascrive praticamente tutto il software sullo Spark Core; l'unica cosa che non viene toccata è il bootloader, che gestisce il processo di caricamento del nuovo firmware e assicura che possiate sempre aggiornare il firmware via USB o con un factory reset. (Metteremo il bootloader open source appena avremo aggiornato il README)
 
-Logging into Spark Build
+Annunciarsi allo Spark Build
 ---
-When you're ready to reprogram your Spark Core, head over to our IDE:
+Quando siete pronti a riprogrammare il vostro Spark Core, andate sulla nostra IDE:
 
 [Spark Build >](https://www.spark.io/build)
 
 ![Spark Build](images/create-account.jpg)
 
-Creating an account is a simple one-step process.  When presented with the login screen, simply enter your email address (careful!), and desired account password.  Press the big friendly "Sign Up" button, and you'll reach the Spark Build home page.
+Creare un account in un semplice passo. Quando si presenta la schermata di login, mettete semplicemente il vostro indirizzo email (con cura!) e la parola d'ordine desiderata. Premete l'amichevole bottone "Sign Up" e raggiungerete la pagina iniziale dello Spark Build.
 
 ![Spark Build](images/log-in.jpg)
 
-If you've already logged into Spark Build before, click the "Let me log in" text beneath the Sign Up button, and you'll be presented with a login for existing users.  Don't worry--if you already have an account and accidentally click the "Sign Up" button, we'll still log you into your existing account.
+Se vi siete già annunciati nello Spark Core, premete sul testo "Let me log in" vicino al bottone di Sign Up e vi troverete una finestra di login per utenti registrati. Non preoccupatevi se per errore avete premuto su "Sign Up" pur avendo già un account, verrete annunciati con il vostro account esistente.
 
-Spark Build, our web IDE
+Spark Build, il nostro web IDE
 ---
 
 ![Spark Build](images/ide.png)
 
-Spark Build is an Integrated Development Environment, or IDE; that means that you can do software development in an easy-to-use application, which just so happens to run in your web browser.
+Spark Build è un ambiente integrato di sviluppo (Integrated Development Environment) detto IDE; questo significa che potete sviluppare software in una appicazione semplice da usare che gira sul vostro web browser.
 
-Spark Build starts with the navigation bar on the left. On the top, there are three buttons, which serve important functions:
+Spark Build parte con la barra di navigazione sulla sinistra. In alto ci sono tre bottoni che servono a tre importanti funzioni:
 
-- **Flash**: Flashes the current code to the Spark Core. This initiates an *over-the-air firmware update* and loads the new software onto your Spark Core.
-- **Verify**: This compiles your code without actually flashing it to the Core; if there are any errors in your code, they will be shown in the debug console on the bottom of the screen.
-- **Save**: Saves any changes you've made to your code.
+- **Flash**: Invia il codice allo Spark Core. Questo inizializza un *aggiornamento firmware via etere* e carica il nuovo software sullo Spark Core.
+- **Verify**: Compila il vostro codice senza inviarlo al Core; se ci sono degli errori nel codice, verranno visualizzati nella console di debugging in fondo allo schermo.
+- **Save**: Salva i cambiamenti fatti nel codice.
 
-At the bottom, there are four more buttons to navigate through the IDE:
+In basso a sinistra ci sono altri quattro bottoni per navigare nella IDE:
 
-- **Code**: Shows a list of your firmware applications and lets you select which one to edit/flash.
-- **Docs**: Brings you to the documentation for Spark.
-- **Cores**: Shows a list of your Spark Cores, so you can choose which to flash, and get more information on each Core.
-- **Settings**: Change your password, log out, or get your access token for API calls.
+- **Code**: Mostra una lista delle vostre applicazioni e vi lascia scegliere quale modificare/caricare.
+- **Docs**: Vi porta alla documentazione per lo Spark.
+- **Cores**: Mostra una lista dei vostri Spark Cores in modo da scegliere quale aggiornare e vi da più informazioni su ogni Core.
+- **Settings**: Per cambiare la password, fare log out o creare il token di accesso per le chiamate API.
 
-Spark Apps and Libraries
+Applicazioni e librerie Spark
 ---
 
 ![Spark Build](images/spark-apps.jpg)
