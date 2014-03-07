@@ -202,11 +202,11 @@ Per cambiare la funzione semplicemente rimanere sul pin e riapparirà il menu pe
 Il firmware Tinker
 ---
 
-The Tinker firmware is the default application program stored in the Spark Core upon its commissioning from the factory assembly line. You can always get back to it by putting the Core in the [factory reset mode](#buttons), or by re-flashing your Core with Tinker in the Spark mobile app.
+Il firmware Tinker é l'applicazione che viene installata di partenza sullo Spark Core quando esce dalla linea di produzione della fabbrica. Potete sempre tornare a questa applicazione mettendo il Core nel modo [factory reset](#bottoni), o ricaricando il Core con Tinker nell'applicazione Spark mobile.
 
-The Tinker app is a great example of how to build a very powerful application with not all that much code. You can have a look at the latest release [here.](https://github.com/spark/core-firmware/blob/master/src/application.cpp)
+L'applicazione Tinker è un bel esempio di come creare un'applicazione potente senza troppo codice. Potete dare un'occhiata all'ultima versione [qui.](https://github.com/spark/core-firmware/blob/master/src/application.cpp)
 
-The Tinker API
+La API Tinker
 ---
 
 When the Tinker firmware is installed on your Spark Core, it will respond to certain API requests from your mobile app, which mirror the four basic GPIO functions (digitalWrite, analogWrite, digitalRead, analogRead). These API requests can also be made from another application, so you can build your own web or mobile app around the Tinker firmware.
