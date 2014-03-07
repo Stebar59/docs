@@ -325,33 +325,32 @@ Applicazioni e librerie Spark
 
 ![Spark Build](images/spark-apps.jpg)
 
-The heart of Spark Build is the "Spark Apps" section, which displays the name of the current app in your editor, as well as a list of your other applications and community-supported example apps.
+Il cuore dello Spark Build è la sezione "Spark Apps", che vi mostra il nome dell'applicazione corrente nell'editor come pure una lista delle vostre altre applicazioni così come quelle di esempio supportate dalla comunità.
 
-The application you've got open in the editor is displayed under the "Current App" header.  You'll notice that this "HELLOWORLD" sample application has only one file, but firmware with associated libraries/multiple files are fully supported.  
+L'applicazione che avete aperta nell'editor è mostrata sotto "Current App". Noterete che l'applicazione di esempio "HELLOWORLD" ha solo un file, ma firmware con associate librerie e/o files multipli sono completamente supportati. 
+Da questo pannello avete a disposizione un sacco di bottoni e azioni che vi potranno aiutare a far crescere e a gestire le vostre applicazioni:
 
-From this pane, you've got a lot of buttons and actions available to you that can help you grow and manage your library of kick-ass applications:
+- **Create**: Potete creare nuove applicazioni premendo il bottone "Create New App". Date un nome e premete invio! La vostra applicazione è salvata nel vostro account e pronta per essere modificata.
 
-- **Create**: You can create a new application by clicking the "Create New App" button.  Give it a sweet name and press enter!  Your app is now saved to your account and ready for editing.
+- **Delete**: Premete il bottone "Remove App" per cancellare definitivamente l'applicazione dalla vostra libreria Spark.
 
-- **Delete**: Click the "Remove App" button to remove it forever from your Spark library.
+- **Rename**: Potete rinominare la vostra applicazione Spark semplicemente facendo doppio click sul titolo della vostra applicazione sotto "Current App".  Potete modificare il campo descrizione "Optional description" nello stesso modo.
+- **My Apps**: Stanchi di lavorare al vostro progetto attuale? Selezionate il nome di un'altra applicazione sotto "My apps" per aprirla in una cartella dell'editor dello Spark Build.
 
-- **Rename**: You can rename your Spark App by simply double-clicking on the title of your app under the "Current App" header.  You can modify the "Optional description" field in the same way.
-- **My Apps**: Tired of working on your current project?  Select the name of another app under the "My apps" header to open it in a tab of the Spark Build editor.
+- **Files**: Visualizza tutti i files conosciuti associati con l'applicazione aperta. Premete su un file di supporto nella vostra applicazione per aprirlo come cartella attiva nell'editor.
 
-- **Files**: This header lists all known files associated with the open application.  Click on a supporting file in your application to open it as an active tab in the editor.
-
-- **Examples**: The "Example apps" header lists a continuously growing number of community-supported example apps.  Use these apps as references for developing your own, or fork them outright to extend their functionality.
+- **Examples**: La lista "Example apps" mostra il numero costantemente crescente delle applicazioni di esempio supportate dalla comunità. Usate queste applicazioni come riferimento per sviluppare le vostre o modificatele per estendere la loro funzionalità.
 
 
-Flashing Your First App
+Caricare la vostra prima applicazione
 ---
 
-The best way to get started with the IDE is to start writing code:
+Il modo migliore per cominciare con la IDE è cominciare a scrivere del codice:
 
-- **Connect**: Make sure your Core is powered and "breathing" Cyan, which indicates that it's connected to the Spark Cloud and ready to be updated.
+- **Connect**: Assicuratevi che il vostro Core sia acceso e che stia "pulsando" in ciano che indica che è connesso allo Spark Cloud e pronto per essere aggiornato.
 
 ---
-- **Get Code**: Try clicking on the "Blink an LED" example under the "Example apps" header.  The Spark Build editor should display the code for the example application in an active tab.  Alternatively, you can copy and paste this snippet of code into a new application in the Build IDE.
+- **Get Code**: Provate a schiacciare sull'esempio "Blink an LED" sotto "Example apps". L'editor dello Spark Build dovrebbe mostrare il codice dell'esempio nella cartella attiva. Alternativamente potete copiare ed incollare il codice in una nuova applicazione nella Build IDE.
 
 ```
 //D7 LED Flash Example
@@ -371,62 +370,59 @@ void loop() {
 
 ![Spark Build](images/select-a-core.jpg)
 
-- **Select Your Core**: The next step is to make sure that you've selected which of your Cores to flash code to.  Click on the "Cores" icon at the bottom left side of the navigation pane, and click on the start next to the Core you'd like to update.  Once you've selecte a Core, the star associated with it will turn yellow.
+- **Select Your Core**: Il prossimo passo è assicurarsi di aver scelto il Core giusto dove caricare l'applicazione. Cliccate sull'icona "Cores" in basso a sinistra della finestra di navigazione e cliccate sulla stella vicino al Core che volete aggiornare. Una volta selezionato la stella associata diventerà gialla.
 
-- **Flash**: Click the "Flash" button, and your code will be sent wirelessly to your Core.  If the flash was successful, the LED on your Core will begin flashing magenta.
+- **Flash**: Premete il bottone "Flash" e il vostro codice sarà inviato in modo wireless al vostro Core. Se il caricamento avrà successo il LED sul Core comincerà a lampeggiare color magenta.
 
 ![Spark Build](images/fork-app.jpg)
 
-- **Fork**: Wish the timing of that LED flash was a little bit faster?  Try clicking on the "Fork This Example" button after selecting the "Blink An LED" example application.  You've now got a personal copy of that application that you can modify, save, and flash to all of your Cores.
+- **Fork**: Vorreste che il ritmo del lampeggio del LED fosse più veloce? Premete sul bottone "Fork This Example" dopo aver selezionato l'esempio "Blink An LED". Avrete ora una copia personale dell'applicazione che potete modificare, salvare e caricare su tutti i vostri Cores.
 
-- **Edit**: Try changing the values in the delay() function from 1000 to 250, which changes the timing interval from 1000 milliseconds to only 250 milliseconds.  Click the Verify button, then the Flash button.  Is your Core's LED blinking faster?  Well done :)
+- **Edit**: Provate a modificare il valore nella funzione delay() da 1000 a 250, che cambia l'intervallo da 1000 millisecondi a solo 250 millisecondi. Premete il bottone Verify e poi il bottone Flash. Il LED del Core lampeggia più velocemente? Ben fatto :)
 
-
-Account Information
+Informazioni Account
 ---
 
-There are a couple of other neat bells and whistles in Spark Build.  The Spark Build IDE the best tool for viewing important information about your Core, managing Cores associated with your Spark account, and "unclaiming" them so they can be transferred to your buddy.
+Ci sono diversi altri sviluppi e miglioramenti nello Spark Build. La Spark Build IDE è il miglior utensile per vedere informazioni importanti del vostro Core, gestire i Cores associati al vostro account Spark e dissociarli in modo che possano essere trasferiti ai vostri amici.
 
 ![Spark Build](images/device-id.jpg)
 
-- **Core ID**: You can view your Core's Device ID by clicking on the "Cores" icon at the bottom of the navigation pane, then clicking the dropdown arrow next to the Core of interest.  
+- **Core ID**: Potete visualizzare il Device ID del vostro Core cliccando sull'icona "Cores" in basso al pannello di navigazione e poi sulla freccina verso il basso vicino al Core di vostro interesse.  
 
-- **Unclaim**: You can "Unclaim" a Core by pressing the "Remove Core" button that is revealed by clicking the dropdown arrow.  Once a Core has been unclaimed, it is available to be reassociated with any Spark users' account.
+- **Unclaim**: Potete dissociare un Core premendo il bottone "Remove Core" che si presenta dopo aver cliccato la freccia verso il basso. Una volta che un Core è stato dissociato è a disposizione per riassociarlo con un qualsiasi altro account di un utente Spark.
 
 ![Spark Build](images/access-token.png)
 
-- **API Key**: You can find your most recent API Key listed under the "Settings" tab in your account.  You can press the "Reset Token" button to assign a new API Key to your account.  *Note* that pressing this button will require you to update any hard-coded API Credentials in your Spark-powered projects!
+- **API Key**: Potete trovare la vostra attuale chiave per l'API sotto il pannello "Settings" del vostro account. Potete premere il bottone "Reset Token" per assegnare una nuova chiave al vostro account. *Notare* che dopo aver premuto questo bottone dovrete modificare tutte le credenziali API programmate in modo fisso nei vostri progetti Spark!
 
 
 
 
-
-
-The Spark Command Line
+La Command Line di Spark
 ===
 
-**Coming soon!** Command line tools so that you can build Spark applications with your own desktop IDE, whether it's Eclipse, Sublime Text, Vim, or anything else.
+**Prossimamente!** Una Command line che vi permette di creare applicazioni Spark con la vostra desktop IDE, sia essa Eclipse, Sublime Text, Vim, o qualsiasi altra.
 
-Deploying a Spark web app
+Creare una Spark web app
 ===
 
-**Coming soon!** We'll give you instructions for how to deploy a web app on Heroku that can talk with a Spark Core.
+**Prossimamente!** Vi daremo istruzioni su come creare una web app su Heroku che possa parlare con uno Spark Core.
 
-Troubleshooting
+Risoluzione di problemi
 ===
 
-What's wrong?
+Cosa non funziona?
 ---
 
-### My Core won't connect to Wi-Fi
+### Il mio Core non si connette al Wi-Fi
 
-There are many reasons that your Core might not be connecting to your Wi-Fi network. To debug, check out our detailed connection troubleshooting section:
+Ci sono molte ragioni per cui il vostro Core non si collega con la vostra rete Wi-Fi. Per analizzare il problema controllate la nostra sezione per l'analisi dettagliata dei problemi di connessione:
 
-[Why won't it connect? >](/#/connect/troubleshooting)
+[Perchè non si collega? >](/#/connect/troubleshooting)
 
-### I can't talk to my Core
+### Non riesco a parlare con il mio Core
 
-Once your Core is connected, it needs to be *claimed* in order to be associated with your account. This is what lets you control your Core and keeps anyone else from doing so.
+Una volta che il vostro Core è connesso, deve essere *registrato* per essere associato al vostro account. Questo è quello che vi permette di controllare il vostro Core ed evitare che lo faccia qualcun'altro.
 
 If you use the mobile app to set up your Core, it should claim it automatically. However if you connect your Core over USB, or if the claiming process is unsuccessful, you can claim it manually.
 
