@@ -179,15 +179,14 @@ Abbiamo selezionato una serie di protocolli di sicurezza molto solidi che sono s
 
 Armeggiare con "Tinker"
 ======
-
-The Tinker app
+L'applicazione Tinker
 ---
 
 ![Tinker](images/tinker.png)
 
-The Tinker section of the Spark mobile app makes it very easy to start playing with your Spark Core without writing any code. It's great for early development, and often it will do everything you need to get your project off of the ground.
+La sezione Tinker dell'applicazione Spark mobile rende molto semplice cominciare a giocare con lo Spark Core senza bisogno di scrivere del codice. È l'ideale per l'inizio dello sviluppo e spesso potrà fare tutto il necessario per far partire il vostro progetto.
 
-The app consists of 16 pins in vertical rows - 8 analog pins on the left, 8 digital pins on the right. These pins represent the 16 GPIO (General Purpose Input and Output) pins on the Spark Core, and are organized the same way.
+L'applicazione consiste in 16 pins in colonne verticali - 8 pins analogici sulla sinistra, 8 pins digitali sulla destra. Questi pins rappresentano i 16 pins GPIO (General Purpose Input and Output) dello Spark Core e sono organizzati nello stesso modo.
 
 ![Tinker selection](images/tinker-select.png)
 
