@@ -430,42 +430,42 @@ Andate sulla nostra pagine per la connessione per imparare come farlo:
 
 [ Associare il vostro Core >](/#/connect/claiming-your-core)
 
-### My Core won't start up
+### Il mio Core non parte
 
-If your Core won't start up (the LED never comes on), here are a few things to check:
+Se il vostro Core non parte (il LED non si accende), ecco alcune cosa da controllare:
 
-- Is the Core receiving sufficient power? If you're not sure, connect a multimeter to the 3.3V pin and GND and see if you get 3.3V, as expected. Try connecting the Core to another power source.
-- Have any components been damaged? Visually inspect both sides of the Core.
+- Il Core riceve abbastanza alimentazione? Se non siete sicuri, collegate un apparecchio di misura al pin 3.3V e a massa (GND) e controllate che ci siano 3.3V come dovrebbe essere. Provate a collegare il Core ad un altro alimentatore.
+- Sono stai danneggiati dei componenti? Controllate visivamente i due lati del Core.
 
-### My Core is behaving erratically
+### Il Core si comporta erroneamente
 
-If you're seeing unexpected behavior with your Core, here are a few things to check:
+Se osservate dei comportamenti inaspettati nel vostro Core, ecco alcuni controlli da fare:
 
-- Is the Core receiving sufficient power? The Core might behave eratically if it's plugged into an unpowered USB hub and not receiving enough power. In addition, if you have components that draw a lot of power (motors, for instance), you might need more power than your computer can supply. Try using a USB power supply or providing more power directly to the VIN or 3.3V pins.
-- If you have a u.FL Core, is an antenna connected? Are you within range of the Wi-Fi router?
+- Il Core riceve abbastanza alimentazione? Il Core si potrebbe comportare in modo errato se è collegato ad un hub USB non alimentato e non riceve abbastanza alimentazione. Inoltre se avete componenti che succhiano molta potenza (motori, per esempio) potreste aver bisogno di più alimentazione di quella che può fornire il vostro computer. Provate ad usare un alimentatore USB o ad alimentare con più potenza direttamente ai pins VIN o 3.3V.
+- Se avete un Core u.FL, l'antenna è connessa? Siete nel raggio d'azione del router Wi-Fi?
 
 
-Further resources
+Ulteriori risorse
 ===
 
-Hardware development
+Sviluppo Hardware
 ---
 
-### Hardware for dummies
+### Hardware per principianti
 
-**Coming soon!**
+**Prossimamente!**
 
-### Advanced hardware
+### Hardware avanzato
 
-**Coming soon!**
+**Prossimamente!**
 
-Software development
+Sviluppo Software
 ---
 
-### Software for dummies
+### Software per principianti
 
-**Coming soon!**
+**Prossimamente!**
 
-### Advanced software
+### Software avanzato
 
-**Coming soon!**
+**Prossimamente!**
