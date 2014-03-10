@@ -349,7 +349,6 @@ Il modo migliore per cominciare con la IDE è cominciare a scrivere del codice:
 
 - **Connect**: Assicuratevi che il vostro Core sia acceso e che stia "pulsando" in ciano che indica che è connesso allo Spark Cloud e pronto per essere aggiornato.
 
----
 - **Get Code**: Provate a schiacciare sull'esempio "Blink an LED" sotto "Example apps". L'editor dello Spark Build dovrebbe mostrare il codice dell'esempio nella cartella attiva. Alternativamente potete copiare ed incollare il codice in una nuova applicazione nella Build IDE.
 
 ```
