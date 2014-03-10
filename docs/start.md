@@ -424,11 +424,11 @@ Ci sono molte ragioni per cui il vostro Core non si collega con la vostra rete W
 
 Una volta che il vostro Core è connesso, deve essere *registrato* per essere associato al vostro account. Questo è quello che vi permette di controllare il vostro Core ed evitare che lo faccia qualcun'altro.
 
-If you use the mobile app to set up your Core, it should claim it automatically. However if you connect your Core over USB, or if the claiming process is unsuccessful, you can claim it manually.
+Se usate l'applicazione mobile per configurare il vostro Core, dovrebbe venire associato auomaticamente. Se invece collegate il vostro Core via USB, o se l'associazione non ha successo, lo potete fare manualmente.
 
-Head over to our connection page to learn about this:
+Andate sulla nostra pagine per la connessione per imparare come farlo:
 
-[ Claiming your Core >](/#/connect/claiming-your-core)
+[ Associare il vostro Core >](/#/connect/claiming-your-core)
 
 ### My Core won't start up
 
